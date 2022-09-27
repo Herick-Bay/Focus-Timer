@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+:root {
+font-size: 62.5%;
+--timer-fc: #323238;
+}
+body {
+ display: grid;
+ min-height: 100vh;
+}
+.conteiner{
+display: flex;
+justify-self: center;
+align-self: center ;
+gap: 19.2rem;
+}
+.timer {
+    margin-top: 5.8rem;
+}
+.timer span {
+    font-size: 12.6rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--timer-fc);
+    line-height: 14.8rem;
+}
+.timerControls {
+display:flex;
+gap:4.0rem ;
+}
+button {
+border: none;
+background: none;
+cursor: pointer;
+}
+.hide {
+display: none;
+}
+.soundpad {
+    display: grid;
+    grid-template-areas: "A B""C D";
+    gap: 3.2rem;
+}
+.soundpad button:hover {
+transform: scale(1.1);
+transition-duration: 300ms;
+}
+.custom-svg :nth-child(1) {
+    fill:#02799D
+}
+.custom-svg :nth-child(2) {
+    fill:#ffffff
+}
+@media (max-width: 768px) {
+ .conteiner {
+  flex-direction: column;
+  gap:5.0rem
+ }
+}
